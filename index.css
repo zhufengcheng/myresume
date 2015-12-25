@@ -28,19 +28,19 @@ html,body{
     left:0;
 }
 .slide li:nth-child(1){
-    background: url(images1/15.jpg) no-repeat;
+    background: url(images/15.jpg) no-repeat;
 }
 .slide li:nth-child(2){
-    background: url(images1/index.jpg) no-repeat;
+    background: url(images/index.jpg) no-repeat;
 }
 .slide li:nth-child(3){
-    background: url(images1/7.jpg) no-repeat;
+    background: url(images/7.jpg) no-repeat;
 }
 .slide li:nth-child(4){
-    background: url(images1/2.jpg) no-repeat;
+    background: url(images/2.jpg) no-repeat;
 }
 .slide li:nth-child(5){
-    background: url(images1/44.jpg) no-repeat;
+    background: url(images/44.jpg) no-repeat;
 }
 .zIndex{
     z-index: 111;
@@ -171,7 +171,7 @@ html,body{
     left:50%;
     margin-left: -320px;
     top:12%;
-    background: url(images1/d1.png) no-repeat center;
+    background: url(images/d1.png) no-repeat center;
 }
 #a4{
     -webkit-transform: rotateY(360deg);
