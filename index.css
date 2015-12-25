@@ -96,6 +96,8 @@ html,body{
 #a2 p{
     -webkit-transform: translate(0,0);
     transform: translate(0,0);
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
 }
 .a3 p{
     position: absolute;
@@ -109,8 +111,8 @@ html,body{
     background:rgba(0,0,0,0.3);
     margin-top: -45px;
     margin-left: -45px;
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     color: #FFFFFF;
     font-weight: 700;
     font-size: 30px;
@@ -171,6 +173,9 @@ html,body{
 #a4{
     -webkit-transform: rotateY(360deg);
     transform: rotateY(360deg);
+    transition:all 2s;
+    -webkit-transition:all 2s;
+
 }
 
 .a5 p{
@@ -317,18 +322,22 @@ html,body{
 @-webkit-keyframes spin {
     from {
         transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
     }
     to {
         transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
     }
 }
 
 @keyframes spin {
     from {
         transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
     }
     to {
         transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
     }
 }
 .sube {
@@ -348,6 +357,7 @@ html,body{
     position: relative;
     width: 200px;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
 .sube1 div {
@@ -365,6 +375,17 @@ html,body{
         transform: rotateX(360deg);
     }
 }
+@-webkit-keyframes spin1 {
+    from {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+    to {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+    }
+}
 .sube1 {
     animation: spin1 5s infinite linear;
+    -webkit-animation: spin1 5s infinite linear;
 }
