@@ -18,6 +18,7 @@ html,body{
     top:0;
     margin-left: -320px;
     -webkit-transform-origin: top;
+    transform-origin: top;
 }
 .slide li{
     position: absolute;
@@ -53,16 +54,16 @@ html,body{
     top:13%;
     left: 50%;
     margin-left: -115px;
-    border-width: 10px;
-    border-style: solid;
+    border:  10px solid #f12345;
     border-radius: 50%;
-    border-color:rgba(234,124,215,0.2);
 }
 .a1 a{
     -webkit-transition: -webkit-transform 2s ease-out;
+    transition: -webkit-transform 2s ease-out;
 }
 .a1 a:hover {
     -webkit-transform: rotateZ(10deg);
+    transform: rotateZ(10deg);
 }
 .a2{
     float: right;
@@ -80,19 +81,21 @@ html,body{
 
 .a2 p:nth-child(1){
     -webkit-transform: translate(500px,0);
+    transform: translate(500px,0);
 }
 .a2 p:nth-child(2){
     -webkit-transform: translate(500px,0);
+    transform: translate(500px,0);
 }
 .a2 p:nth-child(3){
     -webkit-transform: translate(500px,0);
+    transform: translate(500px,0);
 
 }
 
 #a2 p{
     -webkit-transform: translate(0,0);
     transform: translate(0,0);
-
 }
 .a3 p{
     position: absolute;
@@ -107,6 +110,7 @@ html,body{
     margin-top: -45px;
     margin-left: -45px;
     -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
     color: #FFFFFF;
     font-weight: 700;
     font-size: 30px;
@@ -144,13 +148,16 @@ html,body{
     height: 80px;
     line-height: 80px;
     background:-webkit-linear-gradient(top,#CC0000,#FF00FF,#6a2e92,#0000FF,#FFFF00,#CC0000);
+    background:linear-gradient(top,#CC0000,#FF00FF,#6a2e92,#0000FF,#FFFF00,#CC0000);
     left: 50%;
     top: 15%;
     margin-left: -30%;
 }
 #a3 p{
     -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
     -webkit-transition:all 1s;
+    transition:all 1s;
 }
 .a4{
     width: 640px;
@@ -203,6 +210,7 @@ html,body{
     top: 60%;
     width: 72%;
     box-shadow: 0 0 0 10px rgba(255,255,255,0.8);
+    -webkit-box-shadow: 0 0 0 10px rgba(255,255,255,0.8);
     color: #FFFF00;
     border-radius: 20px;
     font-size: 30px;
@@ -223,6 +231,7 @@ html,body{
     width: 100%;
     height:100%;
     background:-webkit-linear-gradient(top,#CC0000,#FF00FF,#6a2e92,#0000FF,#FFFF00,#CC0000);
+    background:linear-gradient(top,#CC0000,#FF00FF,#6a2e92,#0000FF,#FFFF00,#CC0000);
 }
 
 .main{
@@ -238,7 +247,9 @@ html,body{
     font-weight: 900;
     font-size: 40px;
     perspective: 800px;
+    -webkit-perspective: 800px;
     perspective-origin: 50% 50%;
+    -webkit-perspective-origin: 50% 50%;
 
 }
 
@@ -246,6 +257,7 @@ html,body{
     position: relative;
     width: 200px;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
 .sube div {
@@ -259,37 +271,56 @@ html,body{
 
 .hou {
     transform: translateZ(-100px) rotateY(180deg);
+    -webkit-transform: translateZ(-100px) rotateY(180deg);
     background: #FFF;
 }
 
 
 .right {
     transform: rotateY(-270deg) translateX(100px);
+    -webkit-transform: rotateY(-270deg) translateX(100px);
     transform-origin: top right;
+    -webkit-transform-origin: top right;
     background: #0F0;
 }
 
 .left {
     transform: rotateY(270deg) translateX(-100px);
+    -webkit-transform: rotateY(270deg) translateX(-100px);
     transform-origin: center left;
+    -webkit-transform-origin: center left;
     background: #FF0;
 }
 
 .top {
     transform: translateZ(100px) rotateX(-90deg);
+    -webkit-transform: translateZ(100px) rotateX(-90deg);
     transform-origin: top center;
+    -webkit-transform-origin: top center;
     background: #C00;
 }
 
 .bottom {
     transform: translateZ(100px) rotateX(90deg);
+    -webkit-transform: translateZ(100px) rotateX(90deg);
     transform-origin: bottom center;
+    -webkit-transform-origin: bottom center;
     background: #00F;
 }
 
 .qian {
     transform: translateZ(100px);
+    -webkit-transform: translateZ(100px);
     background: #F0F;
+}
+
+@-webkit-keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
 }
 
 @keyframes spin {
@@ -300,10 +331,17 @@ html,body{
         transform: rotateY(360deg);
     }
 }
-
 .sube {
     animation: spin 5s infinite linear;
+    -webkit-animation: spin 5s infinite linear;
 }
+
+
+
+
+
+
+
 
 
 .sube1 {
