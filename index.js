@@ -35,8 +35,7 @@ function move(e){
         var pos=winH+changePos;
         this.preSIndex=cur===oLis.length-1?0:cur+1;
     }
-    //oLis[this.preSIndex].style.webkitTransform="translate(0,"+ pos+"+px)";
-    oLis[this.preSIndex].style.transform="translate(0,"+ pos+"+px)";
+    oLis[this.preSIndex].style.webkitTransform="translate(0,"+ pos+"+px)";
     oLis[this.preSIndex].className="zIndex";
     oLis[this.preSIndex].style.display="block";
     oLis[cur].style.webkitTransform="scale("+(1-scalePos)+") translate(0,"+changePos+"px)";
