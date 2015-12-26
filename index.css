@@ -338,8 +338,8 @@ html,body{
     }
 }
 .sube {
-    animation: spin 3s infinite linear;
-    -webkit-animation: spin 3s infinite linear;
+    animation: spin 6s infinite linear;
+    -webkit-animation: spin 6s infinite linear;
 }
 
 .main1{
@@ -359,11 +359,6 @@ html,body{
     -webkit-perspective-origin: 50% 50%;
 
 }
-
-
-
-
-
 .sube1 {
     position: relative;
     width: 100px;
@@ -399,6 +394,6 @@ html,body{
     }
 }
 .sube1 {
-    animation: spin1 3s infinite linear;
-    -webkit-animation: spin1 3s infinite linear;
+    animation: spin1 6s infinite linear;
+    -webkit-animation: spin1 6s infinite linear;
 }
