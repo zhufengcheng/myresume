@@ -155,8 +155,8 @@ html,body{
     border-radius: 40px;
 }
 #a3 p{
-    -webkit-transform: rotate(2160deg);
-    transform: rotate(2160deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
     -webkit-transition:all 1s;
     transition:all 1s;
 }
