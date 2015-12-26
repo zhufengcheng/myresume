@@ -52,6 +52,3 @@ function end(e){
         this.firstElementChild.id="a"+(this.index+1);
     });
 }
-document.addEventListener("touchmove", function () {
-
-});
